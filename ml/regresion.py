@@ -1,6 +1,5 @@
 import numpy as np
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-from visualizaciones.regresiones import par_real_predicho, par_real_predicho_res
 
 
 def evaluar_modelo(modelo, X_test, y_test, magnitud=""):
@@ -17,11 +16,8 @@ def evaluar_modelo(modelo, X_test, y_test, magnitud=""):
     rmse = np.sqrt(mean_squared_error(y_test, y_pred))
     r2 = r2_score(y_test, y_pred)
 
-    # 3) Gráficos
-    par_real_predicho(y_test, y_pred, magnitud)
-    resumen_residuos = par_real_predicho_res(y_test, y_pred, magnitud)
 
-    # 4) Resumen
+    # 3) Resumen
     resultados = {
         "MAE": mae,
         "RMSE": rmse,
