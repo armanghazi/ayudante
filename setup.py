@@ -10,6 +10,7 @@ setup(
         "matplotlib",
         "seaborn",
         "scipy"
+        "scikit-learn "
     ],
     author="Arman Ghaziaskari",
     description="Librería personalizada para análisis EDA y regresiones",
