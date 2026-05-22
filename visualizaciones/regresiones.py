@@ -33,7 +33,7 @@ def par_real_predicho(y_test, y_pred, magnitud=""):
     g.ax_joint.legend()
 
     plt.tight_layout()
-    #plt.show()
+    plt.show()
 
 #from scipy import stats
 
