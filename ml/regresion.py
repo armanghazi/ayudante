@@ -7,7 +7,7 @@ def evaluar_modelo(modelo, X_test, y_test, magnitud=""):
     Devuelve métricas sin generar gráficos.
     """
 
-    # 1) Prediccione
+    # 1) Predicciones
     y_pred = modelo.predict(X_test)
 
     # 2) Métricas principales
